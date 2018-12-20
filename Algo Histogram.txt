@@ -1,0 +1,7 @@
+1)Create an empty stack
+2)Start from first bar and do the following for every bar list[i] where i=0 to n-1
+	a)If stack is empty or list[i] is higher than the bar at top of stack then push i to stack.
+	b)If this bar is smaller than top of the stack then keep removing the top of stack while the top of stack  is greater.
+	Let the removed bar be list[tp].Calculate the area of rectangle with list[tp] as a smallest bar. 
+	For list[tp] left index is previous istem in stack and right index is i;
+	c)If the stack is empty then one by one remove all bars from stack and repeat step no 2 b for every removed bar.
